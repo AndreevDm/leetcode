@@ -1,5 +1,6 @@
-package andreevdm.leetcode.add_two_numbers;
+package andreevdm.leetcode.all;
 
+import andreevdm.leetcode.all.AddTwoNumbers;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package andreevdm.leetcode.two_sum;
+package andreevdm.leetcode.all;
 
 import java.util.HashMap;
 import java.util.Map;

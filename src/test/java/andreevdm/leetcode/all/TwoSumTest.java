@@ -1,5 +1,6 @@
-package andreevdm.leetcode.two_sum;
+package andreevdm.leetcode.all;
 
+import andreevdm.leetcode.all.TwoSum;
 import org.junit.Assert;
 import org.junit.Test;
 

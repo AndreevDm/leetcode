@@ -1,4 +1,4 @@
-package andreevdm.leetcode.add_two_numbers;
+package andreevdm.leetcode.all;
 
 import java.util.Objects;
 
