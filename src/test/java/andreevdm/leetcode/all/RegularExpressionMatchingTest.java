@@ -1,7 +1,7 @@
 package andreevdm.leetcode.all;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Dmitry Andreev <a href="mailto:AndreevDm@yandex-team.ru"></a>
@@ -32,10 +32,10 @@ public class RegularExpressionMatchingTest {
     }
 
     private static void valid(String string, String pattern) {
-        Assert.assertTrue(RegularExpressionMatching.isMatch(string, pattern));
+        Assertions.assertThat(RegularExpressionMatching.isMatch(string, pattern)).isTrue();
     }
 
     private static void invalid(String string, String pattern) {
-        Assert.assertFalse(RegularExpressionMatching.isMatch(string, pattern));
+        Assertions.assertThat(RegularExpressionMatching.isMatch(string, pattern)).isFalse();
     }
 }

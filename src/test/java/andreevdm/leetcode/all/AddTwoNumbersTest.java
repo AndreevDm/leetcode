@@ -1,8 +1,7 @@
 package andreevdm.leetcode.all;
 
-import andreevdm.leetcode.all.AddTwoNumbers;
-import org.junit.Assert;
-import org.junit.Test;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Dmitry Andreev <a href="mailto:AndreevDm@yandex-team.ru"></a>
@@ -17,10 +16,8 @@ public class AddTwoNumbersTest {
     }
 
     public static void test(int num1, int num2) {
-        Assert.assertEquals(
-            toNodes(num1 + num2),
-            AddTwoNumbers.addTwoNumbers(toNodes(num1), toNodes(num2))
-        );
+        Assertions.assertThat(toNodes(num1 + num2))
+                .isEqualTo(AddTwoNumbers.addTwoNumbers(toNodes(num1), toNodes(num2)));
     }
 
     private static AddTwoNumbers.ListNode toNodes(int number) {
@@ -29,7 +26,7 @@ public class AddTwoNumbersTest {
         }
 
         AddTwoNumbers.ListNode node = new AddTwoNumbers.ListNode(number % 10);
-        node.next =toNodes(number / 10);
+        node.next = toNodes(number / 10);
         return node;
     }
 

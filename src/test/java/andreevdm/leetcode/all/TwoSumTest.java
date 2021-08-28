@@ -1,8 +1,7 @@
 package andreevdm.leetcode.all;
 
-import andreevdm.leetcode.all.TwoSum;
-import org.junit.Assert;
-import org.junit.Test;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Dmitry Andreev <a href="mailto:AndreevDm@yandex-team.ru"></a>
@@ -20,6 +19,7 @@ public class TwoSumTest {
     }
 
     public static void test(int expectedIndex1, int expectedIndex2, int target, int... nums) {
-        Assert.assertArrayEquals(TwoSum.twoSum(nums, target), new int[]{expectedIndex1, expectedIndex2});
+        Assertions.assertThat(TwoSum.twoSum(nums, target))
+                .contains(expectedIndex1, expectedIndex2);
     }
 }
